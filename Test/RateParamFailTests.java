@@ -26,7 +26,7 @@ public class RateParamFailTests {
                 {1, null, 2},
                 {1, 0, 2},
                 {1, "frank", 2},
-                {1, 500, 0},
+                {1, 1000, 0},
                 {1, 1000, 6},
                 {1, 5000, null},
                 {1, 5001, "frank"},

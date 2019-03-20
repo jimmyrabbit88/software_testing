@@ -12,6 +12,7 @@ public class Customer implements Serializable {
     public Customer() {
         this("Name unknown");
     }
+
     public Customer(String name){
         setName(name);
         setMonthlyPayments(0.0);

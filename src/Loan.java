@@ -17,6 +17,7 @@ public class Loan {
 //t
     //Creates a new Loan object with passed values.
     public Loan(double amount, int period) {
+        System.out.println("yep");
         setAmount(amount);
         setPeriod(period);
         setRate(period);
