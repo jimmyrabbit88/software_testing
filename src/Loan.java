@@ -14,28 +14,29 @@ public class Loan {
 
     public Loan() {
     }
-
+//t
     //Creates a new Loan object with passed values.
     public Loan(double amount, int period) {
         setAmount(amount);
         setPeriod(period);
         setRate(period);
     }
-
+//t
     //Returns the loan amount.
     public double getAmount() {
         return loanAmount;
     }
-
+//t
     //Returns the loan period in the number of years.
     public int getPeriod() {
         return numberOfPayments / MONTHS_IN_YEAR;
     }
-    //Returns the annual interest rate.
+//t    //Returns the annual interest rate.
     public double getRate() {
 
         return annualRate;
     }
+
     //Returns the monthly payment
     public double getMonthlyPayment() {
         double monthlyPayment;
@@ -49,7 +50,7 @@ public class Loan {
         totalPayment = getMonthlyPayment() * numberOfPayments;
         return totalPayment;
     }
-
+//t
     //Sets the loan amount of this loan.
     private void setAmount(double amount) throws IllegalArgumentException {
 
@@ -59,14 +60,14 @@ public class Loan {
         loanAmount = amount;
     }
 
+
     //Sets the interest rate of this loan.
     private void setRate(int period) {
 
         if((loanAmount >=500) && (loanAmount <=5000)) {
             if (period >= 1 && period <= 3) {
                 annualRate = 10;
-            }
-            else {
+            } else {
                 annualRate = 6;
             }
         }
@@ -83,7 +84,7 @@ public class Loan {
         }
         monthlyInterestRate = annualRate / 100.0 / MONTHS_IN_YEAR;
     }
-
+//t
     //Sets the loan period of this loan.
     private void setPeriod(int periodInYears) {
             numberOfPayments = periodInYears * MONTHS_IN_YEAR;
